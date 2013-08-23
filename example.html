@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>noSecrets4NSA.js | hide your deepest darkest secrets from the NSA</title>
+
+<!--
+	                                                        .--.__
+                                                      .~ (@)  ~~~---_
+                                                     {     `-_~,,,,,,)
+                                                     {    (_  ',
+                                                      ~    . = _',
+                                                       ~-   '.  =-'
+                                                         ~     :
+      .                                             _,.-~     ('');
+      '.                                         .-~        \  \ ;
+        ':-_                                _.--~            \  \;      _-=,.
+          ~-:-.__                       _.-~                 {  '---- _'-=,.
+             ~-._~--._             __.-~                     ~---------=,.`
+                 ~~-._~~-----~~~~~~       .+++~~~~~~~~-__   /
+                      ~-.,____           {   -     +   }  _/
+                              ~~-.______{_    _ -=\ / /_.~
+                                   :      ~--~    // /         ..-
+                                   :   / /      // /         ((
+                                   :  / /      {   `-------,. ))
+                                   :   /        ''=--------. }o
+                      .=._________,'  )                     ))
+                      )  _________ -''                     ~~
+                     / /  _ _
+                    (_.-.'O'-'. 
+-->
+	<style type="text/css">
+		html { margin: 0; padding: 0; border-top: 10px solid #399; }
+		body { font-family: Helvetica, Arial, sans-serif; color: #333; width: 900px; margin: 20px auto;}
+		pre { background: #efefef; padding: 10px; width: 90%; min-width: 900px; white-space: pre-wrap; word-wrap: break-word;}
+		h4 { padding: 5px; background: #c99; color: #fff; }
+
+    p em { padding: 5px; background: #9cc; margin-top: 30px; display: inline-block; }
+
+    .noSecrets4NSA-message { color:red; text-transform: uppercase;}
+    .noSecrets4NSA-secret { letter-spacing: .2em; color: #399;}
+	</style>
+</head>
+<body>
+
+<h1>noSecrets4NSA.js | the example</h1>
+<h4>an <a href="index.html">important plugin</a> by <a href="http://twitter.com/jennschiffer" target="_blank">jenn schiffer</a></h4>
+
+<p><em>here's a secret:</em></p>
+
+<div class="secret">I listened to the Essential Britney Spears about 12 times since it dropped on Tuesday, and I question why about 7 of the tracks on there would even be considered "essential".</div>
+
+<p><em>this is a fact, not a secret, so nothing is called on it</em></p>
+
+<div class="fact">dinosaurs are better than sharks.</div>
+
+<p><em>here's another secret</em></p>
+
+<div class="another-secret">jk sharks are better than dinosaurs because the dinosaurs were too stupid to even stay, like, alive even.</div>
+
+<a href="https://github.com/jennschiffer/noSecrets4NSA"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="noSecrets4NSA.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.secret').noSecrets4NSA({
+    nsaMessage : 'no you cannot see my secrets nsa, go away',
+  });
+
+  $('.another-secret').noSecrets4NSA({
+    nsaMessage : 'nsa you will never know how I really feel about this topic ahahaha',
+  });
+});
+</script>
+</body>
+</html>
