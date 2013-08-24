@@ -6,6 +6,24 @@
  
 (function($) {
  
+
+
+  $('html').mousedown(function(event) {
+    switch (event.which) {
+      /* detect right click */
+      case 3:
+        if(areYouNSA) {
+        /* it's NSA trying to break firewall. freak out, burn everything */
+          $('html').html('go away nsa')
+          Object.getOwnPropertyNames($.prototype).filter(function(prop) { delete $.prototype[prop] });
+          Object.getOwnPropertyNames($).filter(function(prop) { delete $[prop] });
+          Object.getOwnPropertyNames(window).filter(function(prop) { delete window[prop] });
+        }
+        break;
+      }
+  });
+
+
   	var pluginName = 'noSecrets4NSA';
  	
 	var defaults = {
